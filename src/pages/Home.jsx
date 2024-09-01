@@ -13,9 +13,7 @@ import { Dashboard } from "../components/Dashboard"
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_KEY);
 
 export const Home = () => {
-    const [order, setOrder] = useState(null);
     const dispatch = useDispatch()
-    const location = useLocation();
     const posts = useSelector((state) => state.posts.allPost)
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
     const navigate = useNavigate()

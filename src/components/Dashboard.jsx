@@ -174,7 +174,7 @@ export function Dashboard() {
 
                                     <span onClick={() => setOpenNav(!openNav)} className={`bg-black cursor-pointer z-50  text-white w-[60px] h-[60px] rounded-full lg:grid lg:place-content-center  lg:fixed lg:top-4 lg:left-8 hidden  text-3xl`}>
                                                 {
-                                                            author.charAt(0).toUpperCase()
+                                                            author && author.charAt(0).toUpperCase()
                                                 }
                                     </span>
 
